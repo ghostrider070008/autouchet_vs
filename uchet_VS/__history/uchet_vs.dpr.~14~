@@ -16,8 +16,7 @@ uses
   u_edit_tip_vs in 'u_edit_tip_vs.pas' {f_edit_tip_vs},
   u_red_vs in 'u_red_vs.pas' {f_edit_vs},
   u_kart_to_vs in 'u_kart_to_vs.pas' {f_kart_to_vs},
-  u_add_kart_to_vs in 'u_add_kart_to_vs.pas' {f_add_kart_to_vs},
-  u_edit_kart_to_vs in 'u_edit_kart_to_vs.pas' {f_edit_kart_to};
+  u_add_kart_to_vs in 'u_add_kart_to_vs.pas' {f_add_kart_to_vs};
 
 {$R *.res}
 
@@ -39,6 +38,5 @@ begin
   Application.CreateForm(Tf_edit_vs, f_edit_vs);
   Application.CreateForm(Tf_kart_to_vs, f_kart_to_vs);
   Application.CreateForm(Tf_add_kart_to_vs, f_add_kart_to_vs);
-  Application.CreateForm(Tf_edit_kart_to, f_edit_kart_to);
   Application.Run;
 end.

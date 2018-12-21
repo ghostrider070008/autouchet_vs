@@ -16,16 +16,16 @@ object f_bd: Tf_bd
   object BD: TADOConnection
     Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=G:\'#1044#1086 +
-      #1082#1091#1084#1077#1085#1090#1099'\'#1050#1074#1086#1088#1082'\narcompoisk\uchet_VS\uchet_VS\DB.mdb;Mode=Share De' +
-      'ny None;Persist Security Info=False;Jet OLEDB:System database=""' +
-      ';Jet OLEDB:Registry Path="";Jet OLEDB:Database Password="";Jet O' +
-      'LEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:G' +
-      'lobal Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Je' +
-      't OLEDB:New Database Password="";Jet OLEDB:Create System Databas' +
-      'e=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy Lo' +
-      'cale on Compact=False;Jet OLEDB:Compact Without Replica Repair=F' +
-      'alse;Jet OLEDB:SFP=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=D:\Kw' +
+      'ork\Narkompoisk\uchet_VS\uchet_VS\Win32\Debug\DB.mdb;Mode=Share ' +
+      'Deny None;Persist Security Info=False;Jet OLEDB:System database=' +
+      '"";Jet OLEDB:Registry Path="";Jet OLEDB:Database Password="";Jet' +
+      ' OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB' +
+      ':Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;' +
+      'Jet OLEDB:New Database Password="";Jet OLEDB:Create System Datab' +
+      'ase=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy ' +
+      'Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair' +
+      '=False;Jet OLEDB:SFP=False;'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
@@ -33,7 +33,6 @@ object f_bd: Tf_bd
     Top = 40
   end
   object t_kart_vs: TADOTable
-    Active = True
     Connection = BD
     CursorType = ctStatic
     TableName = 'kart_vs'
@@ -97,7 +96,6 @@ object f_bd: Tf_bd
     Top = 96
   end
   object t_zavod: TADOTable
-    Active = True
     Connection = BD
     CursorType = ctStatic
     TableName = 'zavod'
@@ -131,7 +129,6 @@ object f_bd: Tf_bd
     Top = 208
   end
   object t_name_to: TADOTable
-    Active = True
     Connection = BD
     CursorType = ctStatic
     TableName = 'name_teh_obsl'
@@ -147,7 +144,6 @@ object f_bd: Tf_bd
     end
   end
   object t_tip_vs: TADOTable
-    Active = True
     Connection = BD
     CursorType = ctStatic
     TableName = 'tip_vs'
@@ -169,7 +165,6 @@ object f_bd: Tf_bd
     Top = 264
   end
   object t_kart_to_vs: TADOTable
-    Active = True
     Connection = BD
     CursorType = ctStatic
     TableName = 'kart_to_vs'
