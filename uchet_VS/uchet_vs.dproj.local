@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.507,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_tip_vs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.760,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.450,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_tip_vs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.109,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\u_tip_vs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.312,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_name_to.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.679,G:\Документы\Кворк\narcompoisk\uchet_VS\u_work.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.450,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_tip_vs.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.312,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_name_to.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.201,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.443,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.351,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.880,=D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.212,=D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit2.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_name_to.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.944,D:\Kwork\Narkompoisk\uchet_VS\uchet_vs.dproj=C:\Users\Артем\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.646,D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas=D:\Kwork\Narkompoisk\uchet_VS\u_add_vs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.316,=D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.678,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.054,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.716,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.164,=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.213,G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_zavod.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.169,=C:\Users\Артем\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.992,=D:\Kwork\Narkompoisk\uchet_VS\ModelSupport_uchet_vs\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.829,D:\Kwork\Narkompoisk\uchet_VS\u_zavod.dfm=D:\Kwork\Narkompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.221,D:\Kwork\Narkompoisk\uchet_VS\u_glav.pas=C:\Users\Артем\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,G:\Документы\Кворк\narcompoisk\uchet_VS\u_red_vs.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.646,D:\Kwork\Narkompoisk\uchet_VS\Unit1.dfm=D:\Kwork\Narkompoisk\uchet_VS\u_add_vs.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.213,G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_zavod.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit2.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_name_to.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.145,D:\Kwork\Narkompoisk\uchet_VS\u_bd.pas=D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.213,G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_zavod.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.213,G:\Документы\Кворк\narcompoisk\uchet_VS\u_add_zavod.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.507,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\u_edit_tip_vs.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.221,D:\Kwork\Narkompoisk\uchet_VS\u_glav.dfm=C:\Users\Артем\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.109,G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.dfm=G:\Документы\Кворк\narcompoisk\uchet_VS\u_tip_vs.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.145,D:\Kwork\Narkompoisk\uchet_VS\u_bd.dfm=D:\Kwork\Narkompoisk\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.829,D:\Kwork\Narkompoisk\uchet_VS\u_zavod.pas=D:\Kwork\Narkompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.679,G:\Документы\Кворк\narcompoisk\uchet_VS\u_work.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,G:\Документы\Кворк\narcompoisk\uchet_VS\u_red_vs.pas=G:\Документы\Кворк\narcompoisk\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>2018.12.09 12:00:07.188,=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>2018.12.09 12:06:04.737,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to.dfm=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.dfm</Transaction>
+    <Transaction>2018.12.09 12:06:04.737,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to.pas=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>2018.12.09 12:06:27.343,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to_vs.dfm=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to.dfm</Transaction>
+    <Transaction>2018.12.09 12:06:27.343,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to_vs.pas=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_kart_to.pas</Transaction>
+    <Transaction>2018.12.09 12:19:21.438,=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>2018.12.09 12:20:15.198,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_add_kart_to_vs.pas=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.pas</Transaction>
+    <Transaction>2018.12.09 12:20:15.198,D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\u_add_kart_to_vs.dfm=D:\Kwork\Narkompoisk\uchet_VS\uchet_VS\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

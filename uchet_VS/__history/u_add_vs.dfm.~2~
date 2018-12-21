@@ -1,0 +1,77 @@
+object f_add_vs: Tf_add_vs
+  Left = 0
+  Top = 0
+  Caption = #1044#1086#1073#1072#1074#1083#1077#1085#1080#1077' '#1074#1086#1079#1076#1091#1096#1085#1099#1093' '#1089#1091#1076#1086#1074
+  ClientHeight = 327
+  ClientWidth = 543
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Splitter1: TSplitter
+    Left = 0
+    Top = 265
+    Width = 543
+    Height = 3
+    Cursor = crVSplit
+    Align = alTop
+    ExplicitTop = 177
+    ExplicitWidth = 54
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 543
+    Height = 265
+    Align = alTop
+    TabOrder = 0
+    object Edit1: TEdit
+      Left = 224
+      Top = 128
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 224
+      Top = 155
+      Width = 121
+      Height = 21
+      TabOrder = 1
+      Text = 'Edit2'
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 268
+    Width = 543
+    Height = 59
+    Align = alClient
+    TabOrder = 1
+    ExplicitLeft = 288
+    ExplicitTop = 192
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object btn_add: TBitBtn
+      Left = 112
+      Top = 16
+      Width = 129
+      Height = 33
+      Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+      TabOrder = 0
+    end
+    object btn_cancel: TBitBtn
+      Left = 320
+      Top = 16
+      Width = 129
+      Height = 33
+      Caption = #1054#1090#1084#1077#1085#1072
+      TabOrder = 1
+    end
+  end
+end

@@ -1,0 +1,153 @@
+object f_glav: Tf_glav
+  Left = 0
+  Top = 0
+  Align = alClient
+  Caption = #1059#1095#1077#1090' '#1042#1086#1079#1076#1091#1096#1085#1099#1093' '#1089#1091#1076#1086#1074
+  ClientHeight = 571
+  ClientWidth = 778
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 778
+    Height = 571
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = #1042#1086#1079#1076#1091#1096#1085#1099#1077' '#1089#1091#1076#1085#1072
+      ExplicitLeft = 0
+      ExplicitTop = 40
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 770
+        Height = 465
+        Align = alTop
+        TabOrder = 0
+        object DBGrid1: TDBGrid
+          Left = 1
+          Top = 1
+          Width = 768
+          Height = 463
+          Align = alClient
+          DataSource = f_bd.ds_kart_vs
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'ID'
+              Visible = False
+            end
+            item
+              Expanded = False
+              FieldName = 'tip_vs'
+              Title.Caption = #1058#1080#1087' '#1074#1086#1079#1076#1091#1096#1085#1086#1075#1086' '#1089#1091#1076#1085#1072
+              Width = 121
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'reg_number'
+              Title.Caption = #1056#1077#1075#1080#1089#1090#1088#1072#1094#1080#1086#1085#1085#1099#1081' '#1085#1086#1084#1077#1088
+              Width = 126
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'zavod_number'
+              Title.Caption = #1047#1072#1074#1086#1076#1089#1082#1086#1081' '#1085#1086#1084#1077#1088
+              Width = 107
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'bort_number'
+              Title.Caption = #1041#1086#1088#1090#1086#1074#1086#1081' '#1085#1086#1084#1077#1088
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'date_izgotov'
+              Title.Caption = #1044#1072#1090#1072' '#1080#1079#1075#1086#1090#1086#1074#1083#1077#1085#1080#1103
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'zav_izgotov'
+              Title.Caption = #1047#1072#1074#1086#1076' '#1080#1079#1075#1086#1090#1086#1074#1080#1090#1077#1083#1100
+              Width = 140
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'massa_pust_vs'
+              Title.Caption = #1052#1072#1089#1089#1072' '#1087#1091#1089#1090#1086#1075#1086' '#1042#1057' ('#1090')'
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'centrovka'
+              Title.Caption = #1062#1077#1085#1090#1088#1086#1074#1082#1072
+              Width = 106
+              Visible = True
+            end>
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 465
+        Width = 770
+        Height = 78
+        Align = alClient
+        TabOrder = 1
+        ExplicitLeft = 408
+        ExplicitTop = 496
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object btn_add: TBitBtn
+          Left = 1
+          Top = 14
+          Width = 130
+          Height = 43
+          Caption = 'btn_add'
+          TabOrder = 0
+        end
+        object btn_edit: TBitBtn
+          Left = 137
+          Top = 14
+          Width = 144
+          Height = 43
+          Caption = 'btn_edit'
+          TabOrder = 1
+        end
+        object btn_del: TBitBtn
+          Left = 287
+          Top = 14
+          Width = 130
+          Height = 43
+          Caption = 'btn_del'
+          TabOrder = 2
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ImageIndex = 1
+    end
+  end
+end

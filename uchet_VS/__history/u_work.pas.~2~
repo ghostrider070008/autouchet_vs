@@ -1,0 +1,40 @@
+unit u_work;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Menus, Vcl.StdCtrls,
+  Vcl.Buttons, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  Tf_work = class(TForm)
+    Splitter1: TSplitter;
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_edit: TBitBtn;
+    btn_delete: TBitBtn;
+    btn_cancel: TBitBtn;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_work: Tf_work;
+
+implementation
+
+{$R *.dfm}
+
+uses u_add_vs, u_add_zavod, u_bd, u_edit_zavod, u_glav, u_zavod;
+
+end.

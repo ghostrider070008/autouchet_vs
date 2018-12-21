@@ -1,0 +1,71 @@
+unit u_red_vs;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls,
+  Vcl.DBCtrls, Vcl.ExtCtrls;
+
+type
+  Tf_edit_vs = class(TForm)
+    Splitter1: TSplitter;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    db_lc_tip_vs: TDBLookupComboBox;
+    e_reg_number: TEdit;
+    e_zavod_number: TEdit;
+    e_bort_number: TEdit;
+    DateTimePicker1: TDateTimePicker;
+    db_lc_zavod: TDBLookupComboBox;
+    e_m_pust_vs: TEdit;
+    e_centr: TEdit;
+    Panel2: TPanel;
+    btn_edit: TBitBtn;
+    btn_cancel: TBitBtn;
+    procedure btn_cancelClick(Sender: TObject);
+    procedure btn_editClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_edit_vs: Tf_edit_vs;
+
+implementation
+
+{$R *.dfm}
+
+uses u_add_name_to, u_add_tip_vs, u_add_vs, u_add_zavod, u_bd, u_edit_name_to,
+  u_edit_tip_vs, u_edit_zavod, u_glav, u_tip_vs, u_work, u_zavod;
+
+procedure Tf_edit_vs.btn_cancelClick(Sender: TObject);
+begin
+close;
+end;
+
+procedure Tf_edit_vs.btn_editClick(Sender: TObject);
+begin
+f_bd.t_kart_vs.Edit;
+f_bd.t_kart_vsid_tip_vs.Value:=f_bd.t_tip_vsid.Value;
+f_bd.t_kart_vsid_zav.Value:=f_bd.t_zavodid.Value;
+f_bd.t_kart_vsreg_number.Value:=e_reg_number.Text;
+f_bd.t_kart_vszavod_number.Value:=e_zavod_number.Text;
+f_bd.t_kart_vsbort_number.Value:=e_bort_number.Text;
+f_bd.t_kart_vsdate_izgotov.Value:=DateTimePicker1.Date;
+f_bd.t_kart_vsmassa_pust_vs.Value:=strtofloat(e_m_pust_vs.Text);
+f_bd.t_kart_vscentrovka.Value:=e_centr.Text;
+f_bd.t_kart_vs.Post;
+end;
+
+end.

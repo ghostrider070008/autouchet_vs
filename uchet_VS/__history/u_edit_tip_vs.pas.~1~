@@ -1,0 +1,37 @@
+unit u_edit_tip_vs;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  Tf_edit_tip_vs = class(TForm)
+    Splitter1: TSplitter;
+    Panel1: TPanel;
+    Label1: TLabel;
+    e_name_tip_vs: TEdit;
+    Panel2: TPanel;
+    btn_edit: TBitBtn;
+    btn_cancell: TBitBtn;
+    procedure btn_cancellClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_edit_tip_vs: Tf_edit_tip_vs;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tf_edit_tip_vs.btn_cancellClick(Sender: TObject);
+begin
+close;
+end;
+
+end.

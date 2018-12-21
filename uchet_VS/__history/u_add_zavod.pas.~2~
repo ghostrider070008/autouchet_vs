@@ -1,0 +1,36 @@
+unit u_add_zavod;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls;
+
+type
+  Tf_add_zavod = class(TForm)
+    Panel1: TPanel;
+    Splitter1: TSplitter;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_cancell: TBitBtn;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    e_name_zav: TEdit;
+    e_adress: TEdit;
+    me_tel: TMaskEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_add_zavod: Tf_add_zavod;
+
+implementation
+
+{$R *.dfm}
+
+end.

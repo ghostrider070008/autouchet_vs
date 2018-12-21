@@ -1,0 +1,161 @@
+object f_bd: Tf_bd
+  Left = 0
+  Top = 0
+  Caption = #1041#1072#1079#1072' '#1076#1072#1085#1085#1099#1093
+  ClientHeight = 440
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BD: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=G:\'#1044#1086 +
+      #1082#1091#1084#1077#1085#1090#1099'\'#1050#1074#1086#1088#1082'\narcompoisk\uchet_VS\Win32\Debug\DB.mdb;Mode=Share' +
+      ' Deny None;Persist Security Info=False;Jet OLEDB:System database' +
+      '="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Password="";Je' +
+      't OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLED' +
+      'B:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1' +
+      ';Jet OLEDB:New Database Password="";Jet OLEDB:Create System Data' +
+      'base=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy' +
+      ' Locale on Compact=False;Jet OLEDB:Compact Without Replica Repai' +
+      'r=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 32
+    Top = 40
+  end
+  object t_kart_vs: TADOTable
+    Active = True
+    Connection = BD
+    CursorType = ctStatic
+    TableName = 'kart_vs'
+    Left = 32
+    Top = 96
+    object t_kart_vsID: TAutoIncField
+      FieldName = 'ID'
+      ReadOnly = True
+    end
+    object t_kart_vsid_tip_vs: TIntegerField
+      FieldName = 'id_tip_vs'
+    end
+    object t_kart_vsreg_number: TWideStringField
+      FieldName = 'reg_number'
+    end
+    object t_kart_vszavod_number: TWideStringField
+      FieldName = 'zavod_number'
+      Size = 50
+    end
+    object t_kart_vsbort_number: TWideStringField
+      FieldName = 'bort_number'
+      Size = 15
+    end
+    object t_kart_vsdate_izgotov: TDateTimeField
+      FieldName = 'date_izgotov'
+    end
+    object t_kart_vsid_zav: TIntegerField
+      FieldName = 'id_zav'
+    end
+    object t_kart_vscentrovka: TWideStringField
+      FieldName = 'centrovka'
+      Size = 50
+    end
+    object t_kart_vsname_zavod: TStringField
+      FieldKind = fkLookup
+      FieldName = 'name_zavod'
+      LookupDataSet = t_zavod
+      LookupKeyFields = 'id'
+      LookupResultField = 'name_zav'
+      KeyFields = 'id_zav'
+      Size = 255
+      Lookup = True
+    end
+    object t_kart_vsmassa_pust_vs: TFloatField
+      FieldName = 'massa_pust_vs'
+    end
+  end
+  object ds_kart_vs: TDataSource
+    DataSet = t_kart_vs
+    Left = 88
+    Top = 96
+  end
+  object t_zavod: TADOTable
+    Active = True
+    Connection = BD
+    CursorType = ctStatic
+    TableName = 'zavod'
+    Left = 32
+    Top = 152
+    object t_zavodid: TAutoIncField
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object t_zavodname_zav: TWideStringField
+      FieldName = 'name_zav'
+      Size = 255
+    end
+    object t_zavodadres: TWideStringField
+      FieldName = 'adres'
+      Size = 255
+    end
+    object t_zavodtel: TWideStringField
+      FieldName = 'tel'
+      Size = 255
+    end
+  end
+  object ds_zavod: TDataSource
+    DataSet = t_zavod
+    Left = 88
+    Top = 152
+  end
+  object ds_name_to: TDataSource
+    DataSet = t_name_to
+    Left = 88
+    Top = 208
+  end
+  object t_name_to: TADOTable
+    Active = True
+    Connection = BD
+    CursorType = ctStatic
+    TableName = 'name_teh_obsl'
+    Left = 32
+    Top = 208
+    object t_name_toid: TAutoIncField
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object t_name_toname_to: TWideStringField
+      FieldName = 'name_to'
+      Size = 255
+    end
+  end
+  object t_tip_vs: TADOTable
+    Active = True
+    Connection = BD
+    CursorType = ctStatic
+    TableName = 'tip_vs'
+    Left = 32
+    Top = 264
+    object t_tip_vsid: TAutoIncField
+      FieldName = 'id'
+      ReadOnly = True
+      Visible = False
+    end
+    object t_tip_vsname_tip: TWideStringField
+      FieldName = 'name_tip'
+      Size = 255
+    end
+  end
+  object ds_tip_vs: TDataSource
+    DataSet = t_tip_vs
+    Left = 88
+    Top = 264
+  end
+end

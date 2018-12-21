@@ -1,0 +1,47 @@
+unit u_red_vs;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls,
+  Vcl.DBCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Splitter1: TSplitter;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    db_lc_tip_vs: TDBLookupComboBox;
+    e_reg_number: TEdit;
+    e_zavod_number: TEdit;
+    e_bort_number: TEdit;
+    DateTimePicker1: TDateTimePicker;
+    db_lc_zavod: TDBLookupComboBox;
+    e_m_pust_vs: TEdit;
+    e_centr: TEdit;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_cancel: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

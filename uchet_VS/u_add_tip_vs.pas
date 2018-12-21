@@ -1,0 +1,45 @@
+unit u_add_tip_vs;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  Tf_add_tip_vs = class(TForm)
+    Splitter1: TSplitter;
+    Panel1: TPanel;
+    Label1: TLabel;
+    e_name_tip_vs: TEdit;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_cancell: TBitBtn;
+    procedure btn_addClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_add_tip_vs: Tf_add_tip_vs;
+
+implementation
+
+{$R *.dfm}
+
+uses u_add_name_to, u_add_vs, u_add_zavod, u_bd, u_edit_name_to, u_edit_zavod,
+  u_glav, u_tip_vs, u_work, u_zavod;
+
+procedure Tf_add_tip_vs.btn_addClick(Sender: TObject);
+begin
+f_bd.t_tip_vs.Append;
+f_bd.t_tip_vsname_tip.Value:=e_name_tip_vs.Text;
+f_bd.t_tip_vs.Post;
+Close;
+e_name_tip_vs.Clear;
+MessageDlg('Запись успешно добавлена в БД!', mtConfirmation, [mbOK],0,mbOK);
+end;
+
+end.

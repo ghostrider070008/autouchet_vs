@@ -1,0 +1,47 @@
+unit u_glav;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons, Vcl.Menus, Vcl.FileCtrl;
+
+type
+  Tf_glav = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_edit: TBitBtn;
+    btn_del: TBitBtn;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    DBGrid1: TDBGrid;
+    procedure N3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_glav: Tf_glav;
+
+implementation
+
+{$R *.dfm}
+
+uses u_bd, u_add_vs, u_zavod;
+
+procedure Tf_glav.N3Click(Sender: TObject);
+begin
+f_zavod.ShowModal;
+end;
+
+end.

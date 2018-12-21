@@ -1,0 +1,60 @@
+unit u_add_zavod;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls;
+
+type
+  Tf_add_zavod = class(TForm)
+    Panel1: TPanel;
+    Splitter1: TSplitter;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_cancell: TBitBtn;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    e_name_zav: TEdit;
+    e_adress: TEdit;
+    me_tel: TMaskEdit;
+    procedure btn_addClick(Sender: TObject);
+    procedure btn_cancellClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_add_zavod: Tf_add_zavod;
+
+implementation
+
+{$R *.dfm}
+
+uses u_add_vs, u_bd, u_glav, u_zavod;
+
+procedure Tf_add_zavod.btn_addClick(Sender: TObject);
+begin
+f_bd.t_zavod.Append;
+f_bd.t_zavodname_zav.Value:=e_name_zav.Text;
+f_bd.t_zavodadres.Value:=e_adress.Text;
+f_bd.t_zavodtel.Value:=me_tel.Text;
+f_bd.t_zavod.Post;
+f_bd.t_zavod.Refresh;
+close;
+MessageDlg('Запись успешно добавлена в БД!', mtConfirmation, [mbOK],0,mbOK);
+me_tel.Clear;
+e_name_zav.Clear;
+e_adress.Clear;
+end;
+
+procedure Tf_add_zavod.btn_cancellClick(Sender: TObject);
+begin
+close;
+end;
+
+end.

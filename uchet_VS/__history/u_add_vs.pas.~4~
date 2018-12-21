@@ -1,0 +1,41 @@
+unit u_add_vs;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls,
+  Vcl.DBCtrls;
+
+type
+  Tf_add_vs = class(TForm)
+    Panel1: TPanel;
+    Splitter1: TSplitter;
+    Panel2: TPanel;
+    btn_add: TBitBtn;
+    btn_cancel: TBitBtn;
+    Label1: TLabel;
+    db_lc_tip_vs: TDBLookupComboBox;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_add_vs: Tf_add_vs;
+
+implementation
+
+{$R *.dfm}
+
+uses u_add_name_to, u_add_tip_vs, u_add_zavod, u_bd, u_edit_name_to,
+  u_edit_tip_vs, u_edit_zavod, u_glav, u_tip_vs, u_work, u_zavod;
+
+procedure Tf_add_vs.FormShow(Sender: TObject);
+begin
+db_lc_tip_vs.KeyValue:=db_lc_tip_vs.ListSource.DataSet.FieldByName('id').AsInteger;
+end;
+
+end.
